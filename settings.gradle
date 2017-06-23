@@ -1,0 +1,5 @@
+rootProject.name = 'cloucy'
+include 'server'
+include 'server:discovery'
+findProject(':server:discovery')?.name = 'discovery'
+
